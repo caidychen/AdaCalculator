@@ -28,15 +28,10 @@ procedure Main is
 begin
 
    SS.init(Stack);
-   SS.Push(Stack, 5);
-   SS.Push(Stack, 6);
-   
-   
+
    while True loop
       Put("unlocked > "); Lines.Get_Line(S);
-   
-      
-      
+
       declare
          T : MyStringTokeniser.TokenArray(1..2) := (others => (Start => 1, Length => 0));
          NumTokens : Natural;
@@ -58,8 +53,21 @@ begin
 
             end;
          end loop;
-         Put_Line(Lines.To_String(Command));
-         Put_Line(Lines.To_String(Input));
+
+         if Lines.To_String(Command) = "push" then
+            declare
+               inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+            begin
+               SS.Push(Stack, inputInteger);
+            end;
+         elsif Lines.To_String(Command) = "pop" then
+            declare
+               inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+            begin
+               SS.Pop(Stack, inputInteger);
+            end;
+         end if;
+     
       end;
       
    end loop;

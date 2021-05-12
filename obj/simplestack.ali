@@ -12,7 +12,7 @@ U simplestack%b		simplestack.adb		2ebfe54f NE OO PK GE
 
 U simplestack%s		simplestack.ads		d01c7743 BN EE NE OO PK GE
 
-D simplestack.ads	20210512093832 d01c7743 simplestack%s
+D simplestack.ads	20210512113504 d01c7743 simplestack%s
 D simplestack.adb	20210512093828 fea3920c simplestack%b
 D system.ads		20200228061810 32a08138 system%s
 G a e
