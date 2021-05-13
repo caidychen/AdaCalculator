@@ -16,7 +16,7 @@ with SimpleStack;
 
 procedure Main is
    DB : VariableStore.Database;
-   V1 : VariableStore.Variable := VariableStore.From_String("Var1");
+   
    PIN1  : PIN.PIN := PIN.From_String("1234");
    PIN2  : PIN.PIN := PIN.From_String("1234");
    package Lines is new MyString(Max_MyString_Length => 2048);
@@ -26,7 +26,7 @@ procedure Main is
    Stack : SS.SimpleStack;
    
 begin
-
+   VariableStore.Init(DB);
    SS.init(Stack);
 
    while True loop
@@ -37,8 +37,8 @@ begin
          NumTokens : Natural;
          subtype CommandString is Lines.MyString;
          subtype InputString is Lines.MyString;
-         command: CommandString;
-         input: InputString;
+         Command: CommandString;
+         Input: InputString;
       begin
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
          for I in 1..NumTokens loop
@@ -46,9 +46,9 @@ begin
                token : String := Lines.To_String(Lines.Substring(S,T(I).Start,T(I).Start+T(I).Length-1));
             begin
                if I = 1 then
-                  command := Lines.From_STRING(token);
+                  Command := Lines.From_STRING(token);
                elsif I = 2 then
-                  input := Lines.From_STRING(token);
+                  Input := Lines.From_STRING(token);
                end if;
 
             end;
@@ -62,7 +62,7 @@ begin
             end;
          elsif Lines.To_String(Command) = "pop" then
             declare
-               poppedInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+               poppedInteger : Integer;
             begin
                SS.Pop(Stack, poppedInteger);
                Put_Line("Popped: "); Ada.Integer_Text_IO.Put(poppedInteger);New_Line; -- Dont forget to delete this print!!
@@ -87,7 +87,30 @@ begin
                   SS.Push(Stack, integerB / integerA);
                end if;
             end;
-                
+         elsif Lines.To_String(Command) = "store" then
+            declare
+               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+               poppedInteger : Integer;
+            begin
+               SS.Pop(Stack, poppedInteger);
+               VariableStore.Put(DB,VariableName,poppedInteger);
+            end;
+         elsif Lines.To_String(Command) = "list" then
+            VariableStore.Print(DB);
+         elsif Lines.To_String(Command) = "load" then
+            declare
+               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+            begin
+               SS.Push(Stack, VariableStore.Get(DB,VariableName));
+            end;
+         elsif Lines.To_String(Command) = "remove" then
+            declare
+               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+            begin
+               If VariableStore.Has_Variable(DB,VariableName) then
+                  VariableStore.Remove(DB,VariableName);
+               end if;
+            end;
          end if;
      
       end;
