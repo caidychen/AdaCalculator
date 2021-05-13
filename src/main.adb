@@ -62,10 +62,32 @@ begin
             end;
          elsif Lines.To_String(Command) = "pop" then
             declare
-               inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+               poppedInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
             begin
-               SS.Pop(Stack, inputInteger);
+               SS.Pop(Stack, poppedInteger);
+               Put_Line("Popped: "); Ada.Integer_Text_IO.Put(poppedInteger);New_Line; -- Dont forget to delete this print!!
             end;
+         elsif Lines.To_String(Command) = "+" 
+           or Lines.To_String(Command) = "-" 
+           or Lines.To_String(Command) = "*" 
+           or Lines.To_String(Command) = "/" then
+            declare 
+               integerA : Integer;
+               integerB : Integer;
+            begin
+               SS.Pop(Stack, integerA);
+               SS.Pop(Stack, integerB);
+               if Lines.To_String(Command) = "+" then
+                 SS.Push(Stack, integerB + integerA);
+               elsif Lines.To_String(Command) = "-" then
+                 SS.Push(Stack, integerB - integerA);
+               elsif Lines.To_String(Command) = "*" then
+                 SS.Push(Stack, integerB * integerA);
+               elsif Lines.To_String(Command) = "/" then
+                  SS.Push(Stack, integerB / integerA);
+               end if;
+            end;
+                
          end if;
      
       end;

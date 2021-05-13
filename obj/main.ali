@@ -17,7 +17,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		4e96ae44 NE OO SU
+U main%b		main.adb		692ee95e NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.long_long_integer_text_io%s  a-llitio.ads	a-llitio.ali
@@ -55,7 +55,7 @@ D a-tiinio.ads		20200228061810 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200228061810 5ab55268 interfaces%s
 D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
-D main.adb		20210512130158 884f6e6f main%b
+D main.adb		20210513101638 aff72975 main%b
 D mycommandline.ads	20200512062312 dbf720e9 mycommandline%s
 D mystring.ads		20200512062306 ce083c8f mystring%s
 D mystring.adb		20200512062306 8198c1c4 mystring%b
@@ -94,7 +94,7 @@ G r i none [main standard 17 11 none] [simplestack standard 7 9 none]
 G r c none [main standard 17 11 none] [tokenise mystringtokeniser 16 14 none]
 G r c none [main standard 17 11 none] [from_string stringtointeger 6 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 23|9r6 9r23 10r6 10r31 12r6
+16K9*Ada 20e8 23|9r6 9r23 10r6 10r31 12r6 68r38
 X 5 a-cforma.ads
 61V19 "="{boolean} 6|43i19 7|42i19
 X 7 a-cofuma.ads
@@ -105,33 +105,41 @@ X 8 a-cofuve.ads
 X 10 a-crbltr.ads
 67R12 Tree_Type
 X 13 a-inteio.ads
-18K13*Integer_Text_IO[19|46] 23|10w10 10r35
+18K13*Integer_Text_IO[19|46] 23|10w10 10r35 68r42
 X 15 a-llitio.ads
 18K13*Long_Long_Integer_Text_IO[19|46] 23|12w10
 X 18 a-textio.ads
 57K13*Text_IO 727e16 23|9w10 9r27
+264U14*New_Line 23|68s77
 465U14*Put 23|33s7
+508U14*Put_Line 23|68s16
+X 19 a-tiinio.ads
+80U14*Put 23|68s58[13|18]
 X 23 main.adb
-17U11*Main 17b11 153l5 153t9
+17U11*Main 17b11 175l5 175t9
 18r4 DB{51|15R9}
 19r4 V1{51|13R9}
 20i4 PIN1{28|3I9}
 21i4 PIN2{28|3I9}
 22K12 Lines[25|5] 23r9 33r27 38r35 39r33 43r37 46r34 46r50 49r30 51r28 57r13
-. 59r70 63r16 65r70
+. 59r70 63r16 65r71 70r16 71r15 72r15 73r15 80r19 82r22 84r22 86r22
 23r4 S{25|6R9[22]} 33m42 43r53 46r66
-25K12 SS[29|7] 26r12 30r4 61r16 67r16
-26r4 Stack{29|9R9[25]} 30m12 61m24 61r24 67m23 67r23
+25K12 SS[29|7] 26r12 30r4 61r16 67r16 78r16 79r16 81r18 83r18 85r18 87r19
+26r4 Stack{29|9R9[25]} 30m12 61m24 61r24 67m23 67r23 78m23 78r23 79m23 79r23
+. 81m26 81r26 83m26 83r26 85m26 85r26 87m27 87r27
 36a10 T{27|10A9} 43m56 43r56 46r68 46r79 46r90
 37i10 NumTokens{natural} 43m58 44r22
 38R18 CommandString{25|6R9[22]} 40r19
 39R18 InputString{25|6R9[22]} 41r17
-40r10 command{38R18} 49m19 57r29 63r32
-41r10 input{39R18} 51m19 59r86 65r86
+40r10 command{38R18} 49m19 57r29 63r32 70r32 71r31 72r31 73r31 80r35 82r38
+. 84r38 86r38
+41r10 input{39R18} 51m19 59r86 65r87
 44i14 I{integer} 46r70 46r81 46r92 48r19 50r22
 46a16 token{string} 49r48 51r46
 59i16 inputInteger{integer} 61r31
-65i16 inputInteger{integer} 67m30
+65i16 poppedInteger{integer} 67m30 68r62
+75i16 integerA{integer} 78m30 81r44 83r44 85r44 87r45
+76i16 integerB{integer} 79m30 81r33 83r33 85r33 87r34
 X 24 mycommandline.ads
 1K9*MyCommandLine 23|5w6 24|10e18
 X 25 mystring.ads
@@ -139,7 +147,8 @@ X 25 mystring.ads
 5k9*MyString 23|6w6 22r25 25|48e13
 6R9*MyString 23|23r15[22] 38r41[22] 39r39[22]
 8V13 To_String{string} 23|43s43[22] 46s40[22] 57s19[22] 59s76[22] 63s22[22]
-. 65s76[22]
+. 65s77[22] 70s22[22] 71s21[22] 72s21[22] 73s21[22] 80s25[22] 82s28[22] 84s28[22]
+. 86s28[22]
 12V13 From_String{6R9[23|22]} 23|49s36[22] 51s34[22]
 26V13 Substring{6R9[23|22]} 23|46s56[22]
 33U14 Get_Line 23|33s33[22]
@@ -157,11 +166,11 @@ X 29 simplestack.ads
 7k9*SimpleStack 23|14w6 25r22 29|47e16
 9R9 SimpleStack 23|26r15[25]
 16U14 Init 23|30s7[25]
-19U14 Push 23|61s19[25]
-25U14 Pop 23|67s19[25]
+19U14 Push 23|61s19[25] 81s21[25] 83s21[25] 85s21[25] 87s22[25]
+25U14 Pop 23|67s19[25] 78s19[25] 79s19[25]
 X 31 stringtointeger.ads
-3K9*StringToInteger 23|3w6 59r42 65r42 31|8e20
-6V13*From_String{integer} 23|59s58 65s58
+3K9*StringToInteger 23|3w6 59r42 65r43 31|8e20
+6V13*From_String{integer} 23|59s58 65s59
 X 51 variablestore.ads
 7K9*VariableStore 23|4w6 18r9 19r9 19r35 51|73e18
 13R9*Variable<25|6R9[11]> 23|19r23
