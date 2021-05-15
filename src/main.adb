@@ -71,21 +71,31 @@ begin
 
          if LockedState then
             if Lines.To_String(Command) = "unlock" then
-               declare
-                  PINAttempt  : PIN.PIN := PIN.From_String(Lines.To_String(Input)); 
-               begin
-                  If PIN."="(PINAttempt, PINOriginal) then
-                     LockedState := False;
-                  end if;
-               end;
+               if Lines.Length(Input) = 4 then
+                  declare
+                     PINAttempt  : PIN.PIN := PIN.From_String(Lines.To_String(Input)); 
+                  begin
+                     If PIN."="(PINAttempt, PINOriginal) then
+                        LockedState := False;
+                     else 
+                        Put("Wrong PIN. Please try again.");New_Line;
+                     end if;
+                  end;
+               else 
+                  Put("You must enter a valid PIN.");New_Line;
+               end if;
             end if;
          else
             if Lines.To_String(Command) = "lock" then
                declare
                   InputPINString : String := Lines.To_String(Input);
                begin
-                  PINOriginal := PIN.From_String(InputPINString);
-                  LockedState := True;
+                  if Lines.Length(Input) = 4 then
+                     PINOriginal := PIN.From_String(InputPINString);
+                     LockedState := True;
+                  else 
+                     Put("You must enter a valid PIN.");New_Line;
+                  end if;
                end;
             elsif Lines.To_String(Command) = "push" then
                declare
@@ -101,7 +111,7 @@ begin
                      SS.Pop(Stack, poppedInteger);
                   end;
                else 
-                  Put("Cannot pop on an empty stack");New_Line;
+                  Put("Cannot pop on an empty stack.");New_Line;
                   return;
                end if;
             elsif Lines.To_String(Command) = "+" 
@@ -122,11 +132,16 @@ begin
                      elsif Lines.To_String(Command) = "*" then
                         SS.Push(Stack, integerB * integerA);
                      elsif Lines.To_String(Command) = "/" then
-                        SS.Push(Stack, integerB / integerA);
+                        if integerA /= 0 then
+                           SS.Push(Stack, integerB / integerA);
+                        else
+                           Put("Division by zero is disallowed.");New_Line;
+                           return;
+                        end if;
                      end if;
                   end;
                else
-                  Put("Cannot apply arithmatic operations with less than 2 operands in the stack");New_Line;
+                  Put("Cannot apply arithmatic operations with less than 2 operands in the stack.");New_Line;
                   return;
                end if;
             elsif Lines.To_String(Command) = "store" then
@@ -162,7 +177,7 @@ begin
                   If VariableStore.Has_Variable(DB,VariableName) then
                      VariableStore.Remove(DB,VariableName);
                   else 
-                     Put("Variable "); Put(Lines.To_String(Input)); Put(" does not exist");New_Line;
+                     Put("Variable "); Put(Lines.To_String(Input)); Put(" does not exist.");New_Line;
                      return;
                   end if;
                end;
