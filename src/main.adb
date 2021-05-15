@@ -15,6 +15,7 @@ with SimpleStack;
 
 
 procedure Main is
+   StackSize : Integer := 5;
    DB : VariableStore.Database;
    
    PINOriginal  : PIN.PIN;
@@ -22,7 +23,7 @@ procedure Main is
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
    
-   package SS is new SimpleStack(100, Integer, 0);
+   package SS is new SimpleStack(StackSize, Integer, 0);
    Stack : SS.SimpleStack;
    
    LockedState : Boolean;
@@ -98,11 +99,16 @@ begin
                   end if;
                end;
             elsif Lines.To_String(Command) = "push" then
-               declare
-                  inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
-               begin
-                  SS.Push(Stack, inputInteger);
-               end;
+               if SS.Size(Stack) < StackSize - 1 then
+                  declare
+                     inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+                  begin
+                     SS.Push(Stack, inputInteger);
+                  end;
+               else 
+                  Put("Stack is full.");New_Line;
+                  return;
+               end if;
             elsif Lines.To_String(Command) = "pop" then
                if SS.Size(Stack) > 0 then
                   declare
