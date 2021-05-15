@@ -17,28 +17,43 @@ with SimpleStack;
 procedure Main is
    DB : VariableStore.Database;
    
-   PIN1  : PIN.PIN := PIN.From_String("1234");
-   PIN2  : PIN.PIN := PIN.From_String("1234");
+   PINOriginal  : PIN.PIN;
+  
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
    
    package SS is new SimpleStack(100, Integer, 0);
    Stack : SS.SimpleStack;
    
+   LockedState : Boolean;
+   
 begin
    VariableStore.Init(DB);
    SS.init(Stack);
-
+   if MyCommandLine.Argument_Count = 1 then 
+      PINOriginal := PIN.From_String(MyCommandLine.Argument(1));
+      LockedState := True;
+   else
+      Put("Master PIN not supplied. Application aborted...");
+      return;
+   end if;
+   
    while True loop
-      Put("unlocked > "); Lines.Get_Line(S);
+      if LockedState = True then
+         Put("locked > ");
+      else
+         Put("unlocked > ");
+      end if;
+        
+      Lines.Get_Line(S);
 
       declare
          T : MyStringTokeniser.TokenArray(1..2) := (others => (Start => 1, Length => 0));
          NumTokens : Natural;
          subtype CommandString is Lines.MyString;
          subtype InputString is Lines.MyString;
-         Command: CommandString;
-         Input: InputString;
+         Command: CommandString := Lines.From_STRING("");
+         Input: InputString := Lines.From_STRING("");
       begin
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
          for I in 1..NumTokens loop
@@ -54,65 +69,105 @@ begin
             end;
          end loop;
 
-         if Lines.To_String(Command) = "push" then
-            declare
-               inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
-            begin
-               SS.Push(Stack, inputInteger);
-            end;
-         elsif Lines.To_String(Command) = "pop" then
-            declare
-               poppedInteger : Integer;
-            begin
-               SS.Pop(Stack, poppedInteger);
-               Put_Line("Popped: "); Ada.Integer_Text_IO.Put(poppedInteger);New_Line; -- Dont forget to delete this print!!
-            end;
-         elsif Lines.To_String(Command) = "+" 
-           or Lines.To_String(Command) = "-" 
-           or Lines.To_String(Command) = "*" 
-           or Lines.To_String(Command) = "/" then
-            declare 
-               integerA : Integer;
-               integerB : Integer;
-            begin
-               SS.Pop(Stack, integerA);
-               SS.Pop(Stack, integerB);
-               if Lines.To_String(Command) = "+" then
-                 SS.Push(Stack, integerB + integerA);
-               elsif Lines.To_String(Command) = "-" then
-                 SS.Push(Stack, integerB - integerA);
-               elsif Lines.To_String(Command) = "*" then
-                 SS.Push(Stack, integerB * integerA);
-               elsif Lines.To_String(Command) = "/" then
-                  SS.Push(Stack, integerB / integerA);
+         if LockedState then
+            if Lines.To_String(Command) = "unlock" then
+               declare
+                  PINAttempt  : PIN.PIN := PIN.From_String(Lines.To_String(Input)); 
+               begin
+                  If PIN."="(PINAttempt, PINOriginal) then
+                     LockedState := False;
+                  end if;
+               end;
+            end if;
+         else
+            if Lines.To_String(Command) = "lock" then
+               declare
+                  InputPINString : String := Lines.To_String(Input);
+               begin
+                  PINOriginal := PIN.From_String(InputPINString);
+                  LockedState := True;
+               end;
+            elsif Lines.To_String(Command) = "push" then
+               declare
+                  inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
+               begin
+                  SS.Push(Stack, inputInteger);
+               end;
+            elsif Lines.To_String(Command) = "pop" then
+               if SS.Size(Stack) > 0 then
+                  declare
+                     poppedInteger : Integer;
+                  begin
+                     SS.Pop(Stack, poppedInteger);
+                  end;
+               else 
+                  Put("Cannot pop on an empty stack");New_Line;
+                  return;
                end if;
-            end;
-         elsif Lines.To_String(Command) = "store" then
-            declare
-               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
-               poppedInteger : Integer;
-            begin
-               SS.Pop(Stack, poppedInteger);
-               VariableStore.Put(DB,VariableName,poppedInteger);
-            end;
-         elsif Lines.To_String(Command) = "list" then
-            VariableStore.Print(DB);
-         elsif Lines.To_String(Command) = "load" then
-            declare
-               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
-            begin
-               SS.Push(Stack, VariableStore.Get(DB,VariableName));
-            end;
-         elsif Lines.To_String(Command) = "remove" then
-            declare
-               VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
-            begin
-               If VariableStore.Has_Variable(DB,VariableName) then
-                  VariableStore.Remove(DB,VariableName);
+            elsif Lines.To_String(Command) = "+" 
+              or Lines.To_String(Command) = "-" 
+              or Lines.To_String(Command) = "*" 
+              or Lines.To_String(Command) = "/" then
+               if SS.Size(Stack) > 1 then
+                  declare 
+                     integerA : Integer;
+                     integerB : Integer;
+                  begin
+                     SS.Pop(Stack, integerA);
+                     SS.Pop(Stack, integerB);
+                     if Lines.To_String(Command) = "+" then
+                        SS.Push(Stack, integerB + integerA);
+                     elsif Lines.To_String(Command) = "-" then
+                        SS.Push(Stack, integerB - integerA);
+                     elsif Lines.To_String(Command) = "*" then
+                        SS.Push(Stack, integerB * integerA);
+                     elsif Lines.To_String(Command) = "/" then
+                        SS.Push(Stack, integerB / integerA);
+                     end if;
+                  end;
+               else
+                  Put("Cannot apply arithmatic operations with less than 2 operands in the stack");New_Line;
+                  return;
                end if;
-            end;
+            elsif Lines.To_String(Command) = "store" then
+               if SS.Size(Stack) > 0 then
+                  declare
+                     VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+                     poppedInteger : Integer;
+                  begin
+                     SS.Pop(Stack, poppedInteger);
+                     VariableStore.Put(DB,VariableName,poppedInteger);
+                  end;
+               else
+                  Put("Stack is empty");New_Line;
+                  return;
+               end if;
+            elsif Lines.To_String(Command) = "list" then
+               VariableStore.Print(DB);
+            elsif Lines.To_String(Command) = "load" then
+               declare
+                  VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+               begin
+                  if VariableStore.Has_Variable(DB, VariableName) then
+                     SS.Push(Stack, VariableStore.Get(DB,VariableName));
+                  else
+                     Put("Unable to find variable "); Put(Lines.To_String(Input));New_Line;
+                  return;
+                  end if;
+               end;
+            elsif Lines.To_String(Command) = "remove" then
+               declare
+                  VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+               begin
+                  If VariableStore.Has_Variable(DB,VariableName) then
+                     VariableStore.Remove(DB,VariableName);
+                  else 
+                     Put("Variable "); Put(Lines.To_String(Input)); Put(" does not exist");New_Line;
+                     return;
+                  end if;
+               end;
+            end if;
          end if;
-     
       end;
       
    end loop;
