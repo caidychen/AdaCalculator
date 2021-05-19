@@ -22,10 +22,15 @@ package SimpleStack with SPARK_Mode is
               Storage(S,Size(S)) = I and
               (for all J in 1..Size(S'Old) => Storage(S,J) = Storage(S'Old,J)));
 
-   procedure Pop(S : in out SimpleStack; I : out Item) with
+   procedure PopWithResult(S : in out SimpleStack; I : out Item) with
      Pre => (Size(S) /= 0),
      Post => (Size(S) = Size(S'Old) - 1 and
               I = Storage(S,Size(S'Old)) and
+                (for all J in 1..Max_Size => Storage(S,J) = Storage(S'Old,J)));
+
+   procedure Pop(S : in out SimpleStack) with
+     Pre => (Size(S) /= 0),
+     Post => (Size(S) = Size(S'Old) - 1 and
               (for all J in 1..Max_Size => Storage(S,J) = Storage(S'Old,J)));
 
    private

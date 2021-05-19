@@ -1,0 +1,82 @@
+Summary of SPARK analysis
+=========================
+
+--------------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   CodePeer                       Provers   Justified   Unproved
+--------------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .                             .           .          .
+Flow Dependencies                 .          .          .                             .           .          .
+Initialization                   18         18          .                             .           .          .
+Non-Aliasing                      2          2          .                             .           .          .
+Run-time Checks                 152          .          .    148 (CVC4 98%, Trivial 2%)           .          4
+Assertions                       24          .          .                     24 (CVC4)           .          .
+Functional Contracts             51          .          .     48 (CVC4 96%, Trivial 4%)           .          3
+LSP Verification                  .          .          .                             .           .          .
+Termination                       .          .          .                             .           .          .
+Concurrency                       .          .          .                             .           .          .
+--------------------------------------------------------------------------------------------------------------
+Total                           247    20 (8%)          .                     220 (89%)           .     7 (3%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 6 units
+in unit main, 18 subprograms and packages out of 18 analyzed
+  Main at main.adb:17 flow analyzed (0 errors, 0 checks and 1 warnings) and not proved, 40 checks out of 47 proved
+  Main.Lines at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Main.Lines.Equal at mystring.ads:18, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  Main.Lines.From_String at mystring.ads:12, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  Main.Lines.Get at mystring.ads:30, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Main.Lines.Get_Line at mystring.ads:33, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  Main.Lines.Length at mystring.ads:23, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Main.Lines.Less at mystring.ads:16, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  Main.Lines.MyString at mystring.ads:6, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Main.Lines.Substring at mystring.ads:26, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  Main.Lines.To_String at mystring.ads:8, instantiated at main.adb:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  Main.SS at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Main.SS.Init at simplestack.ads:16, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Main.SS.Pop at simplestack.ads:25, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  Main.SS.Push at simplestack.ads:19, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  Main.SS.SimpleStack at simplestack.ads:9, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Main.SS.Size at simplestack.ads:11, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Main.SS.Storage at simplestack.ads:13, instantiated at main.adb:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+in unit mycommandline, 0 subprograms and packages out of 4 analyzed
+  MyCommandLine at mycommandline.ads:1 skipped
+  MyCommandLine.Argument at mycommandline.ads:7 skipped
+  MyCommandLine.Argument_Count at mycommandline.ads:3 skipped
+  MyCommandLine.Command_Name at mycommandline.ads:5 skipped
+in unit mystringtokeniser, 3 subprograms and packages out of 3 analyzed
+  MyStringTokeniser at mystringtokeniser.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MyStringTokeniser.Is_Whitespace at mystringtokeniser.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MyStringTokeniser.Tokenise at mystringtokeniser.ads:16 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (35 checks)
+in unit pin, 3 subprograms and packages out of 3 analyzed
+  PIN at pin.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  PIN.From_String at pin.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  PIN.PIN at pin.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+in unit stringtointeger, 2 subprograms and packages out of 2 analyzed
+  StringToInteger at stringtointeger.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  StringToInteger.From_String at stringtointeger.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (13 checks)
+in unit variablestore, 10 subprograms and packages out of 23 analyzed
+  VariableStore at variablestore.ads:7 skipped
+  VariableStore.Database at variablestore.ads:15 skipped
+  VariableStore.Equal at variablestore.ads:35 skipped
+  VariableStore.From_String at variablestore.ads:30 skipped
+  VariableStore.Get at variablestore.ads:21 skipped
+  VariableStore.Has_Variable at variablestore.ads:19 skipped
+  VariableStore.Init at variablestore.ads:17 skipped
+  VariableStore.Length at variablestore.ads:37 skipped
+  VariableStore.Less at variablestore.ads:34 skipped
+  VariableStore.Print at variablestore.ads:39 skipped
+  VariableStore.Put at variablestore.ads:24 skipped
+  VariableStore.Remove at variablestore.ads:27 skipped
+  VariableStore.To_String at variablestore.ads:32 skipped
+  VariableStore.Variables at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  VariableStore.Variables.Equal at mystring.ads:18, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  VariableStore.Variables.From_String at mystring.ads:12, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  VariableStore.Variables.Get at mystring.ads:30, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  VariableStore.Variables.Get_Line at mystring.ads:33, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  VariableStore.Variables.Length at mystring.ads:23, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  VariableStore.Variables.Less at mystring.ads:16, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  VariableStore.Variables.MyString at mystring.ads:6, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  VariableStore.Variables.Substring at mystring.ads:26, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
+  VariableStore.Variables.To_String at mystring.ads:8, instantiated at variablestore.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)

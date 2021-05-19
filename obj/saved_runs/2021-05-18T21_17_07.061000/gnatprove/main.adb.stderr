@@ -1,0 +1,1 @@
+main.adb:50:28: medium: precondition might fail, cannot prove S(I) <= '9' (e.g. when I = 1 and S = (2 => '9', others => ':') and S'First = 1 and S'Last = 2)[#0]

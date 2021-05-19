@@ -1,0 +1,7 @@
+20210518113556
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=D:\CodeRepo\GnatAdaCalculator\obj\gnatprove\faeebbb7.tmp

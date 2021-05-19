@@ -1,0 +1,5 @@
+# Object file
+obj/
+
+# Ada Library Information
+*.ali

@@ -1,0 +1,2 @@
+main.adb:39:22: illegal character
+main.adb:40:21: "=" should be ":="

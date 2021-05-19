@@ -1,0 +1,7 @@
+main.adb:128:24: too many arguments in call to "SS.Pop"
+main.adb:143:24: too many arguments in call to "SS.Pop"
+main.adb:144:24: too many arguments in call to "SS.Pop"
+main.adb:170:24: too many arguments in call to "SS.Pop"
+simplestack.ads:28:15: "I" is undefined
+simplestack.adb:15:42: not type conformant with declaration at simplestack.ads:25
+simplestack.adb:15:42: too many parameters

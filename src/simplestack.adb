@@ -12,9 +12,14 @@ package body SimpleStack with SPARK_Mode is
       S.storage(S.size) := I;
    end Push;
 
-   procedure Pop(S : in out SimpleStack; I : out Item) is
+   procedure PopWithResult(S : in out SimpleStack; I : out Item) is
    begin
       I := S.storage(S.size);
+      S.size := S.size - 1;
+   end PopWithResult;
+
+   procedure Pop(S : in out SimpleStack) is
+   begin
       S.size := S.size - 1;
    end Pop;
 

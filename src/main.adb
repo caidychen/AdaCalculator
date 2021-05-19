@@ -8,32 +8,35 @@ with MyStringTokeniser;
 with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
-
+with Ada.Containers;
 with Ada.Long_Long_Integer_Text_IO;
 
 with SimpleStack;
 
 
-procedure Main is
-   StackSize : Integer := 5;
+procedure Main with SPARK_Mode is
+   StackSize : Integer := 512;
    DB : VariableStore.Database;
-   
-   PINOriginal  : PIN.PIN;
-  
+   PINOriginal  : PIN.PIN := PIN.From_String("0000");
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
-   
-   package SS is new SimpleStack(StackSize, Integer, 0);
+   package SS is new SimpleStack(512, Integer, 0);
    Stack : SS.SimpleStack;
-   
-   LockedState : Boolean;
-   
+   LockedState : Boolean := False;
+   use type Ada.Containers.Count_Type;
 begin
    VariableStore.Init(DB);
    SS.init(Stack);
    if MyCommandLine.Argument_Count = 1 then 
-      PINOriginal := PIN.From_String(MyCommandLine.Argument(1));
-      LockedState := True;
+      declare
+         S : String := MyCommandLine.Argument(1);
+
+      begin
+         if S'Length = 4 and (for all I in S'Range => S(I) >= '0' and S(I) <= '9') then 
+            PINOriginal := PIN.From_String(S);
+            LockedState := True;
+         end if;
+      end;
    else
       Put("Master PIN not supplied. Application aborted...");
       return;
@@ -72,27 +75,31 @@ begin
 
          if LockedState then
             if Lines.To_String(Command) = "unlock" then
-               if Lines.Length(Input) = 4 then
-                  declare
-                     PINAttempt  : PIN.PIN := PIN.From_String(Lines.To_String(Input)); 
-                  begin
-                     If PIN."="(PINAttempt, PINOriginal) then
-                        LockedState := False;
-                     else 
-                        Put("Wrong PIN. Please try again.");New_Line;
-                     end if;
-                  end;
-               else 
-                  Put("You must enter a valid PIN.");New_Line;
-               end if;
+               declare
+                  S : String := Lines.To_String(Input);
+               begin
+                  if S'Length = 4 and (for all I in S'Range => S(I) >= '0' and S(I) <= '9') then
+                     declare
+                        PINAttempt  : PIN.PIN := PIN.From_String(S); 
+                     begin
+                        If PIN."="(PINAttempt, PINOriginal) then
+                           LockedState := False;
+                        else 
+                           Put("Wrong PIN. Please try again.");New_Line;
+                        end if;
+                     end;
+                  else 
+                     Put("You must enter a valid PIN.");New_Line;
+                  end if;
+               end;
             end if;
          else
             if Lines.To_String(Command) = "lock" then
                declare
-                  InputPINString : String := Lines.To_String(Input);
+                   S : String := Lines.To_String(Input);
                begin
-                  if Lines.Length(Input) = 4 then
-                     PINOriginal := PIN.From_String(InputPINString);
+                  if S'Length = 4 and (for all I in S'Range => S(I) >= '0' and S(I) <= '9') then
+                     PINOriginal := PIN.From_String(S);
                      LockedState := True;
                   else 
                      Put("You must enter a valid PIN.");New_Line;
@@ -103,7 +110,12 @@ begin
                   declare
                      inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
                   begin
-                     SS.Push(Stack, inputInteger);
+                     if inputInteger > 0 then
+                        SS.Push(Stack, inputInteger);
+                     else
+                        Put("Negative number is not allowed.");
+                        return;
+                     end if;
                   end;
                else 
                   Put("Stack is full.");New_Line;
@@ -111,11 +123,7 @@ begin
                end if;
             elsif Lines.To_String(Command) = "pop" then
                if SS.Size(Stack) > 0 then
-                  declare
-                     poppedInteger : Integer;
-                  begin
-                     SS.Pop(Stack, poppedInteger);
-                  end;
+                  SS.Pop(Stack);
                else 
                   Put("Cannot pop on an empty stack.");New_Line;
                   return;
@@ -129,9 +137,9 @@ begin
                      integerA : Integer;
                      integerB : Integer;
                   begin
-                     SS.Pop(Stack, integerA);
-                     SS.Pop(Stack, integerB);
-                     if Lines.To_String(Command) = "+" then
+                     SS.PopWithResult(Stack, integerA);
+                     SS.PopWithResult(Stack, integerB);
+                     if Lines.To_String(Command) = "+" and integerA >= 0 and integerB < Integer'Last - integerA then
                         SS.Push(Stack, integerB + integerA);
                      elsif Lines.To_String(Command) = "-" then
                         SS.Push(Stack, integerB - integerA);
@@ -152,12 +160,20 @@ begin
                end if;
             elsif Lines.To_String(Command) = "store" then
                if SS.Size(Stack) > 0 then
-                  declare
-                     VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
-                     poppedInteger : Integer;
+                  declare 
+                     S : String := Lines.To_String(Input);
                   begin
-                     SS.Pop(Stack, poppedInteger);
-                     VariableStore.Put(DB,VariableName,poppedInteger);
+                     if S'Length > 0 and S'Length < VariableStore.Max_Variable_Length then
+                        declare
+                           VariableName : VariableStore.Variable := VariableStore.From_String(S);
+                           poppedInteger : Integer;
+                        begin
+                           SS.PopWithResult(Stack, poppedInteger);
+                           if VariableStore.Length(DB) < VariableStore.Max_Entries then
+                              VariableStore.Put(DB,VariableName,poppedInteger);
+                           end if;
+                        end;
+                     end if;
                   end;
                else
                   Put("Stack is empty");New_Line;
@@ -166,25 +182,39 @@ begin
             elsif Lines.To_String(Command) = "list" then
                VariableStore.Print(DB);
             elsif Lines.To_String(Command) = "load" then
-               declare
-                  VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+               declare 
+                  S : String := Lines.To_String(Input);
                begin
-                  if VariableStore.Has_Variable(DB, VariableName) then
-                     SS.Push(Stack, VariableStore.Get(DB,VariableName));
-                  else
-                     Put("Unable to find variable "); Put(Lines.To_String(Input));New_Line;
-                  return;
+                  if S'Length > 0 and S'Length < VariableStore.Max_Variable_Length then
+                     declare
+                        VariableName : VariableStore.Variable := VariableStore.From_String(S);
+                     begin
+                        if VariableStore.Has_Variable(DB, VariableName) then
+                            if SS.Size(Stack) < StackSize - 1 then
+                              SS.Push(Stack, VariableStore.Get(DB,VariableName));
+                           end if;
+                        else
+                           Put("Unable to find variable "); Put(Lines.To_String(Input));New_Line;
+                           return;
+                        end if;
+                     end;
                   end if;
                end;
             elsif Lines.To_String(Command) = "remove" then
+                declare 
+                     S : String := Lines.To_String(Input);
+                  begin
+                     if S'Length > 0 and S'Length < VariableStore.Max_Variable_Length then
                declare
-                  VariableName : VariableStore.Variable := VariableStore.From_String(Lines.To_String(Input));
+                  VariableName : VariableStore.Variable := VariableStore.From_String(S);
                begin
                   If VariableStore.Has_Variable(DB,VariableName) then
                      VariableStore.Remove(DB,VariableName);
                   else 
                      Put("Variable "); Put(Lines.To_String(Input)); Put(" does not exist.");New_Line;
                      return;
+                  end if;
+                     end;
                   end if;
                end;
             end if;

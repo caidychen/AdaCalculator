@@ -1,0 +1,1354 @@
+{
+  "spark": [
+    {
+      "name": "Main",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 17
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.MyString",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 6
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Length",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 23
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.To_String",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 8
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.From_String",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 12
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Less",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 16
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Get",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 30
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Equal",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 18
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Substring",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 26
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.Lines.Get_Line",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 33
+        },
+        {
+          "file": "main.adb",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.SimpleStack",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 9
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.Size",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 11
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.Storage",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 13
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.Init",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 16
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.Push",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 19
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Main.SS.Pop",
+      "sloc": [
+        {
+          "file": "simplestack.ads",
+          "line": 25
+        },
+        {
+          "file": "main.adb",
+          "line": 26
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "mystring.adb",
+      "line": 85,
+      "col": 36,
+      "rule": "ALIASING",
+      "severity": "info",
+      "entity": {
+        "name": "Main.Lines.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "main.adb",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "mystring.ads",
+      "line": 33,
+      "col": 23,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main.Lines.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "main.adb",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "mystring.adb",
+      "line": 6,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main.Lines.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "main.adb",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 140,
+      "col": 36,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 102,
+      "col": 45,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__0.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 96,
+      "col": 13,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__1.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 66,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__2.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 152,
+      "col": 22,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 153,
+      "col": 22,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 24,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 76,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 19,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 180,
+      "col": 22,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 27,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "simplestack.ads",
+      "line": 25,
+      "col": 42,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main.SS.Pop",
+        "sloc": [
+          {
+            "file": "simplestack.ads",
+            "line": 25
+          },
+          {
+            "file": "main.adb",
+            "line": 26
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "simplestack.ads",
+      "line": 16,
+      "col": 19,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main.SS.Init",
+        "sloc": [
+          {
+            "file": "simplestack.ads",
+            "line": 16
+          },
+          {
+            "file": "main.adb",
+            "line": 26
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__length",
+    " 2": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__to_string",
+    " 3": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__from_string",
+    " 4": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__less",
+    " 5": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__get",
+    " 6": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__equal",
+    " 7": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__substring",
+    " 8": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__get_line",
+    " 9": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__ss__storage",
+    " 10": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__ss__init",
+    " 11": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__ss__push",
+    " 12": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__ss__pop",
+    " 13": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main"
+  },
+  "proof": [
+    {
+      "file": "main.adb",
+      "line": 55,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 375,
+              "time": 1.30000000000000E-01
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 294,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 375,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 274,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 55,
+      "check_col": 31,
+      "cntexmp": {
+        "main.adb": {
+          "previous": {
+          },
+          "current": {
+            "18": [
+              {
+                "name": "StackSize",
+                "value": "512",
+                "kind": "variable"
+              }
+            ],
+            "33": [
+              {
+                "name": "Stack",
+                "value": "(storage => (others => 0), size => 0)",
+                "kind": "variable"
+              }
+            ],
+            "36": [
+              {
+                "name": "S",
+                "value": "(4 => '0', others => ':')",
+                "kind": "variable"
+              },
+              {
+                "name": "S'First",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "S'Last",
+                "value": "4",
+                "kind": "variable"
+              }
+            ],
+            "37": [
+              {
+                "name": "IsValid",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "39": [
+              {
+                "name": "S'First",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "40": [
+              {
+                "name": "IsValid",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "42": [
+              {
+                "name": "S'Last",
+                "value": "4",
+                "kind": "variable"
+              }
+            ],
+            "44": [
+              {
+                "name": "S",
+                "value": "(4 => '0', others => ':')",
+                "kind": "variable"
+              }
+            ],
+            "54": [
+              {
+                "name": "IsValid",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "55": [
+              {
+                "name": "I",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "S",
+                "value": "(4 => '0', others => ':')",
+                "kind": "variable"
+              },
+              {
+                "name": "S'First",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "S'Last",
+                "value": "4",
+                "kind": "variable"
+              }
+            ],
+            "85": [
+              {
+                "name": "token'First",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "token'Last",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "115": [
+              {
+                "name": "InputPINString'First",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "InputPINString'Last",
+                "value": "1",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 0,
+      "session_dir": 13,
+      "how_proved": "prover"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Length",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 23
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.Lines",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.From_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 12
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Substring",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 26
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.SS.Size",
+            "sloc": [
+              {
+                "file": "simplestack.ads",
+                "line": 11
+              },
+              {
+                "file": "main.adb",
+                "line": 26
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.SS.Init",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 16
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.Lines.MyString",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 6
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.SS.Size",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 11
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.SS.Size",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 11
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Get",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 30
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.SS.Storage",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 13
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.SS.Size",
+            "sloc": [
+              {
+                "file": "simplestack.ads",
+                "line": 11
+              },
+              {
+                "file": "main.adb",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.SS.Storage",
+            "sloc": [
+              {
+                "file": "simplestack.ads",
+                "line": 13
+              },
+              {
+                "file": "main.adb",
+                "line": 26
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.SS.Pop",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 25
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 23
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.To_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 8
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Less",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 16
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Get_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 481
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Get_Line",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 33
+            },
+            {
+              "file": "main.adb",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.SS.Size",
+            "sloc": [
+              {
+                "file": "simplestack.ads",
+                "line": 11
+              },
+              {
+                "file": "main.adb",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.SS.Storage",
+            "sloc": [
+              {
+                "file": "simplestack.ads",
+                "line": 13
+              },
+              {
+                "file": "main.adb",
+                "line": 26
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.SS.Push",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 19
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.SS",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.SS.SimpleStack",
+          "sloc": [
+            {
+              "file": "simplestack.ads",
+              "line": 9
+            },
+            {
+              "file": "main.adb",
+              "line": 26
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 1.87500000000000E-01,
+    "codepeer results": 1.05600000824779E-03,
+    "init_why_sections": 4.88699995912611E-04,
+    "gnatwhy3.transformations.detect_polymorphism": 0.00000000000000E+00,
+    "globals/properties (advanced)": 3.07014007121325E-02,
+    "gnatwhy3.transformations.eliminate_literal": 1.56250000000000E-02,
+    "gnatwhy3.run_vcs": 2.34375000000000E-01,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 1.56250000000000E-02,
+    "flow analysis": 2.56612002849579E-02,
+    "gnatwhy3.transformations.simplify_formula": 1.56250000000000E-02,
+    "marking": 7.43839982897043E-03,
+    "translation of standard": 3.12300003133714E-03,
+    "gnatwhy3.register_vcs": 7.81250000000000E-02,
+    "gnatwhy3.transformations.eliminate_epsilon": 0.00000000000000E+00,
+    "globals (basic)": 1.33021995425224E-02,
+    "gnatwhy3.schedule_vcs": 1.56250000000000E-02,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 1.56250000000000E-01,
+    "gnatwhy3.transformations.eliminate_inductive": 0.00000000000000E+00,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_builtin": 0.00000000000000E+00,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 4.56250000000000E+00
+  }
+}
