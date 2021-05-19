@@ -8,21 +8,21 @@ Data Dependencies                 .          .          .                       
 Flow Dependencies                 .          .          .                             .           .          .
 Initialization                   18         18          .                             .           .          .
 Non-Aliasing                      2          2          .                             .           .          .
-Run-time Checks                 156          .          .    152 (CVC4 98%, Trivial 2%)           .          4
+Run-time Checks                 158          .          .    157 (CVC4 99%, Trivial 1%)           .          1
 Assertions                       24          .          .                     24 (CVC4)           .          .
 Functional Contracts             54          .          .     54 (CVC4 97%, Trivial 3%)           .          .
 LSP Verification                  .          .          .                             .           .          .
 Termination                       .          .          .                             .           .          .
 Concurrency                       .          .          .                             .           .          .
 --------------------------------------------------------------------------------------------------------------
-Total                           254    20 (8%)          .                     230 (91%)           .     4 (2%)
+Total                           256    20 (8%)          .                     235 (92%)           .     1 (0%)
 
 
 max steps used for successful proof: 1
 
 Analyzed 6 units
 in unit main, 19 subprograms and packages out of 19 analyzed
-  Main at main.adb:17 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 45 checks out of 49 proved
+  Main at main.adb:17 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 50 checks out of 51 proved
   Main.Lines at main.adb:21 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Main.Lines.Equal at mystring.ads:18, instantiated at main.adb:21 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
   Main.Lines.From_String at mystring.ads:12, instantiated at main.adb:21 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)

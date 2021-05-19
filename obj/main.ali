@@ -17,7 +17,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		ae38d74f NE OO SU
+U main%b		main.adb		d708431b NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -56,7 +56,7 @@ D a-tiinio.ads		20200228061810 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200228061810 5ab55268 interfaces%s
 D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
-D main.adb		20210518134556 8dba0ff8 main%b
+D main.adb		20210519133846 f48a9bac main%b
 D mycommandline.ads	20200512062312 dbf720e9 mycommandline%s
 D mystring.ads		20200512062306 ce083c8f mystring%s
 D mystring.adb		20200512062306 8198c1c4 mystring%b
@@ -161,9 +161,10 @@ X 23 main.adb
 99a20 S{string} 101r22 101r53 101r64 101r80 102r53
 101i48 I{integer} 101r66 101r82
 111i22 inputInteger{integer} 113r25 114r40
-137i22 integerA{integer} 140m46 142r60 142r104 143r51 145r51 147r51 149r28
-. 150r54
-138i22 integerB{integer} 141m46 142r78 143r40 145r40 147r40 150r43
+137i22 integerA{integer} 140m46 142r84 143r40 144r87 145r40 146r65 146r135
+. 147r40 149r28 150r43
+138i22 integerB{integer} 141m46 142r61 142r110 143r51 144r64 144r114 145r51
+. 146r83 146r109 147r51 150r54
 164a22 S{string} 166r25 166r42 168r95
 168r28 VariableName{51|13R9} 173r52
 169i28 poppedInteger{integer} 171m52 173r65

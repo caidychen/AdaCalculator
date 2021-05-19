@@ -68,6 +68,7 @@
   <proof prover="0"><result status="valid" steps="27"/></proof>
   </goal>
   <goal name="def&#39;vc.13" expl="precondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="valid" steps="20"/></proof>
   <transf name="trivial_true" proved="true" >
   </transf>
   </goal>
@@ -84,13 +85,13 @@
   <transf name="trivial_true" proved="true" >
   </transf>
   </goal>
-  <goal name="def&#39;vc.15" expl="precondition">
-  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <goal name="def&#39;vc.12" expl="precondition">
+  <proof prover="0"><result status="valid" steps="27"/></proof>
   <transf name="trivial_true" proved="true" >
   </transf>
   </goal>
-  <goal name="def&#39;vc.13" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" steps="20"/></proof>
+  <goal name="def&#39;vc.8" expl="precondition">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   <transf name="trivial_true" proved="true" >
   </transf>
   </goal>

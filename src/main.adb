@@ -139,15 +139,15 @@ begin
                   begin
                      SS.PopWithResult(Stack, integerA);
                      SS.PopWithResult(Stack, integerB);
-                     if Lines.To_String(Command) = "+" and integerA >= 0 and integerB < Integer'Last - integerA then
-                        SS.Push(Stack, integerB + integerA);
-                     elsif Lines.To_String(Command) = "-" then
-                        SS.Push(Stack, integerB - integerA);
-                     elsif Lines.To_String(Command) = "*" then
-                        SS.Push(Stack, integerB * integerA);
+                     if Lines.To_String(Command) = "+" and (integerB >= 0 and then integerA < Integer'Last - integerB) then
+                        SS.Push(Stack, integerA + integerB);
+                     elsif Lines.To_String(Command) = "-" and (integerB >= 0 and then integerA > Integer'First + integerB) then
+                        SS.Push(Stack, integerA - integerB);
+                     elsif Lines.To_String(Command) = "*" and (((integerA > 0 and integerB > 0) and then integerA < Integer'Last / integerB)) then
+                        SS.Push(Stack, integerA * integerB);
                      elsif Lines.To_String(Command) = "/" then
-                        if integerA /= 0 then
-                           SS.Push(Stack, integerB / integerA);
+                        if integerB /= 0 and integerA > 0 and integerB > 0 then
+                           SS.Push(Stack, integerA / integerB);
                         else
                            Put("Division by zero is disallowed.");New_Line;
                            return;
