@@ -14,13 +14,21 @@ package body MyStringTokeniser with SPARK_Mode is
       end if;
       Index := S'First;
       while OutIndex <= Tokens'Last and Index <= S'Last and Count < Tokens'Length loop
-         pragma Loop_Invariant
+         pragma Loop_Invariant                   -- For all indices from Tokens'First to OutIndex - 1:
+                                                 -- The index of the starting point of each token must be equal to or greater than
+                                                 -- the index of the first letter from the input string.
+                                                 -- Every token's length must be equal to or smaller than the length of the input string (with
+                                                 -- any whitespace stripped from the beginning if any).
+                                                 -- For example, a string " abc" starts from 1 and ends at 4. It has 1 token which starts from 2
+                                                 -- with a length of 3. In this case 3 - 1 <= 4 - 2 holds.
            (for all J in Tokens'First..OutIndex-1 =>
               (Tokens(J).Start >= S'First and
                    Tokens(J).Length > 0) and then
             Tokens(J).Length-1 <= S'Last - Tokens(J).Start);
 
-         pragma Loop_Invariant (OutIndex = Tokens'First + Count);
+         pragma Loop_Invariant (OutIndex = Tokens'First + Count); -- At the beginning of the loop, OutIndex = Tokens'First and Count = 0
+                                                                  -- After each loop, OutIndex is incremented by 1, so is Count. Therefore Invariant always holds.
+                                                                  -- At the end of the loop, the invariant still holds  ********** TODO: How to prove it? ***********
 
          -- look for start of next token
          while (Index >= S'First and Index < S'Last) and then Is_Whitespace(S(Index)) loop
