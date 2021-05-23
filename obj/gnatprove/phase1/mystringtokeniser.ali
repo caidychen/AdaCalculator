@@ -21,8 +21,8 @@ W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
 D ada.ads		20200228061810 76789da1 ada%s
 D a-charac.ads		20200228061810 2d3ec45b ada.characters%s
 D a-chlat1.ads		20200228061810 66457d31 ada.characters.latin_1%s
-D mystringtokeniser.ads	20200512062302 9bc8f6ad mystringtokeniser%s
-D mystringtokeniser.adb	20200512062302 e91d0d1d mystringtokeniser%b
+D mystringtokeniser.ads	20210523015640 9bc8f6ad mystringtokeniser%s
+D mystringtokeniser.adb	20210523015640 e91d0d1d mystringtokeniser%b
 D system.ads		20200228061810 32a08138 system%s
 G a Z
 X 1 ada.ads
@@ -34,28 +34,28 @@ X 3 a-chlat1.ads
 34e4*HT{character} 4|14r37
 35e4*LF{character} 4|13r47
 X 4 mystringtokeniser.ads
-3K9*MyStringTokeniser 25l5 25e22 5|2b14 59l5 59t22
+3K9*MyStringTokeniser 34l5 34e22 5|2b14 67l5 67t22
 5R9*TokenExtent 8e14 10r51 5|8r16
-6i7*Start{positive} 20r26 22r62 5|19r26 21r54 31m20
-7i7*Length{natural} 21r25 22r27 5|20r30 21r23 32m20 35r42 35r81 35r116 35r176
-. 36m23 36r40 50r32 53r40
+6i7*Start{positive} 22r26 28r58 5|25r26 27r54 39m20
+7i7*Length{natural} 26r25 28r23 5|26r30 27r23 40m20 43r42 43r81 43r116 43r176
+. 44m23 44r40 58r32 61r40
 10A9*TokenArray(5R9)<integer> 16r54 5|6r54
-12V13*Is_Whitespace{boolean} 12>27 5|26s63 29s65 35s147
+12V13*Is_Whitespace{boolean} 12>27 5|34s63 37s65 43s147
 12e27 Ch{character} 13r7 13r19 14r9
-16U14*Tokenise 16>23 16=38 16<66 5|6b14 57l8 57t16
-16a23 S{string} 17r17 17r35 17r46 20r35 22r39 5|6b23 12r11 12r21 15r16 16r50
-. 19r35 21r35 26r26 26r46 26r77 29r23 29r44 29r79 35r91 35r126 35r161 50r16
-16a38 Tokens{10A9} 17r58 17r74 18r23 19r24 19r38 20r12 21r11 22r13 22r48
-. 5|6b38 9r29 16r25 16r69 18r26 19r16 20r20 21r13 21r44 23r44 39m13 43r28
-16i66 Count{natural} 18r14 19r52 5|6b66 11m7 16r61 23r59 40m13 40r22
-19i15 Index{integer} 20r19 21r18 22r20 22r55
+16U14*Tokenise 16>23 16=38 16<66 5|6b14 65l8 65t16
+16a23 S{string} 17r17 17r35 17r46 22r35 28r35 5|6b23 12r11 12r21 15r16 16r50
+. 25r35 27r35 34r26 34r46 34r77 37r23 37r44 37r79 43r91 43r126 43r161 58r16
+16a38 Tokens{10A9} 17r58 17r74 18r23 21r24 21r38 22r12 26r11 28r9 28r44 5|6b38
+. 9r29 16r25 16r69 24r26 25r16 26r20 27r13 27r44 29r44 47m13 51r28
+16i66 Count{natural} 18r14 21r52 5|6b66 11m7 16r61 29r59 48m13 48r22
+21i15 Index{integer} 22r19 26r18 28r16 28r51
 X 5 mystringtokeniser.adb
-7i7 Index{positive} 15m7 16r41 26r17 26r38 26r79 27m13 27r22 29r14 29r35
-. 29r81 31r29 35r52 35r68 35r103 35r163 50r41 53m16 53r25
-8r7 Extent{4|5R9} 31m13 32m13 35r35 35r74 35r109 35r169 36m16 36r33 39r33
-. 50r25 53r33
-9i7 OutIndex{integer} 16r13 18r40 23r33 39r20 43r17 46m16 46r28
-18i21 J{integer} 19r23 20r27 21r20 21r51
+7i7 Index{positive} 15m7 16r41 34r17 34r38 34r79 35m13 35r22 37r14 37r35
+. 37r81 39r29 43r52 43r68 43r103 43r163 58r41 61m16 61r25
+8r7 Extent{4|5R9} 39m13 40m13 43r35 43r74 43r109 43r169 44m16 44r33 47r33
+. 58r25 61r33
+9i7 OutIndex{integer} 16r13 24r40 29r33 47r20 51r17 54m16 54r28
+24i21 J{integer} 25r23 26r27 27r20 27r51
 
 QQ SPARKVERSION SPARK Community 2020 (20200429)
 GG EK_DIRECT_CALLS mystringtokeniser__is_whitespace 0

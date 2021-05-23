@@ -1,47 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_file>
-    <file_marker column=" 34" line=" 17" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 36" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 5" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 36" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 5" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 36" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 5" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 36" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 5" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 30" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\stringtointeger.adb</vfs_file>
@@ -318,67 +277,59 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 40" line=" 102" >
+    <file_marker column=" 40" line=" 104" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 92" line=" 101" >
+    <file_marker column=" 92" line=" 103" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 53" line=" 102" >
+    <file_marker column=" 53" line=" 104" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 39" line=" 114" >
+    <file_marker column=" 39" line=" 116" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 82" line=" 168" >
+    <file_marker column=" 82" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 125" >
+    <file_marker column=" 42" line=" 127" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 112" line=" 142" >
+    <file_marker column=" 112" line=" 144" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 126" >
+    <file_marker column=" 21" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 64" line=" 116" >
+    <file_marker column=" 64" line=" 118" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 77" line=" 142" >
+    <file_marker column=" 77" line=" 144" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 65" line=" 142" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 49" line=" 145" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 102" line=" 142" >
+    <file_marker column=" 65" line=" 144" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -386,11 +337,19 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 52" line=" 150" >
+    <file_marker column=" 102" line=" 144" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 82" line=" 168" >
+    <file_marker column=" 49" line=" 151" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 154" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 82" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -410,7 +369,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 83" line=" 168" >
+    <file_marker column=" 83" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -422,23 +381,23 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 29" line=" 176" >
+    <file_marker column=" 29" line=" 180" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 166" >
+    <file_marker column=" 42" line=" 170" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 28" line=" 171" >
+    <file_marker column=" 28" line=" 175" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 53" line=" 166" >
+    <file_marker column=" 53" line=" 170" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 83" line=" 168" >
+    <file_marker column=" 83" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -450,15 +409,15 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 67" line=" 166" >
+    <file_marker column=" 67" line=" 170" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 45" line=" 173" >
+    <file_marker column=" 45" line=" 177" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -490,11 +449,11 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 174" >
+    <file_marker column=" 1" line=" 178" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -506,7 +465,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -514,23 +473,11 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 45" line=" 173" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 24" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 173" >
+    <file_marker column=" 45" line=" 177" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -538,7 +485,11 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 45" line=" 173" >
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 177" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -546,7 +497,15 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 45" line=" 177" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 24" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -562,7 +521,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -570,7 +529,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -578,63 +537,11 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 45" line=" 173" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 24" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 174" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 37" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 126" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 126" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 41" line=" 166" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 172" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 37" >
-      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
-      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 173" >
+    <file_marker column=" 45" line=" 177" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -642,7 +549,59 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 192" >
+    <file_marker column=" 1" line=" 178" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 37" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 128" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 128" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 170" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 176" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 37" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 177" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 24" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 196" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -650,43 +609,43 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 174" >
+    <file_marker column=" 1" line=" 178" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 23" line=" 177" >
+    <file_marker column=" 23" line=" 181" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 96" line=" 168" >
+    <file_marker column=" 96" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 93" line=" 190" >
+    <file_marker column=" 93" line=" 194" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 87" line=" 209" >
+    <file_marker column=" 87" line=" 213" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 46" line=" 194" >
+    <file_marker column=" 46" line=" 198" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -694,15 +653,15 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 35" line=" 195" >
+    <file_marker column=" 35" line=" 199" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 57" line=" 168" >
+    <file_marker column=" 57" line=" 172" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -710,19 +669,19 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\variablestore.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 172" >
+    <file_marker column=" 1" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 173" >
+    <file_marker column=" 1" line=" 177" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 175" >
+    <file_marker column=" 1" line=" 179" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 83" line=" 172" >
+    <file_marker column=" 83" line=" 176" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -746,7 +705,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 36" line=" 109" >
+    <file_marker column=" 36" line=" 111" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -754,7 +713,7 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 126" >
+    <file_marker column=" 31" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -762,31 +721,31 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\simplestack.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 22" line=" 126" >
+    <file_marker column=" 22" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 24" line=" 140" >
+    <file_marker column=" 24" line=" 142" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 38" line=" 141" >
+    <file_marker column=" 38" line=" 143" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 126" >
+    <file_marker column=" 21" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 125" >
+    <file_marker column=" 42" line=" 127" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 33" line=" 126" >
+    <file_marker column=" 33" line=" 128" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 30" line=" 171" >
+    <file_marker column=" 30" line=" 175" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
@@ -794,11 +753,51 @@
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\simplestack.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 44" line=" 171" >
+    <file_marker column=" 44" line=" 175" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 102" line=" 142" >
+    <file_marker column=" 102" line=" 144" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 64" line=" 154" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\mycommandline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 7" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\pin.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 86" line=" 150" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 120" line=" 149" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 119" line=" 150" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 120" line=" 149" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 161" >
+      <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
+      <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 49" line=" 151" >
       <vfs_project>D:\CodeRepo\GnatAdaCalculator\adacalculator.gpr</vfs_project>
       <vfs_file>D:\CodeRepo\GnatAdaCalculator\src\main.adb</vfs_file>
     </file_marker>

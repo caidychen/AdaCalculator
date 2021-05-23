@@ -92,6 +92,8 @@ begin
                      Put("You must enter a valid PIN.");New_Line;
                   end if;
                end;
+            elsif Lines.To_String(Command) = "lock" then
+                Put("Already locked.");New_Line;
             end if;
          else
             if Lines.To_String(Command) = "lock" then
@@ -110,7 +112,7 @@ begin
                   declare
                      inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
                   begin
-                     if inputInteger > 0 then
+                     if inputInteger >= 0 then
                         SS.Push(Stack, inputInteger);
                      else
                         Put("Negative number is not allowed.");
@@ -143,7 +145,8 @@ begin
                         SS.Push(Stack, integerA + integerB);
                      elsif Lines.To_String(Command) = "-" and (integerB >= 0 and then integerA > Integer'First + integerB) then
                         SS.Push(Stack, integerA - integerB);
-                     elsif Lines.To_String(Command) = "*" and (((integerA > 0 and integerB > 0) and then integerA < Integer'Last / integerB)) then
+                     elsif (Lines.To_String(Command) = "*" and (integerA >= 0 and integerB >= 0)) and then
+                       (Long_Long_Integer(integerA) * Long_Long_Integer(integerB)) <= Long_Long_Integer(Integer'Last) then
                         SS.Push(Stack, integerA * integerB);
                      elsif Lines.To_String(Command) = "/" then
                         if integerB /= 0 and integerA > 0 and integerB > 0 then

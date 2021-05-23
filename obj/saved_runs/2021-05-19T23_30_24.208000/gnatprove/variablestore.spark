@@ -1,0 +1,4289 @@
+{
+  "spark": [
+    {
+      "name": "VariableStore",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 7
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Variables",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.MyString",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 6
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Length",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 23
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.To_String",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 8
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.From_String",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 12
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Less",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 16
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Get",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 30
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Equal",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 18
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Substring",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 26
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Variables.Get_Line",
+      "sloc": [
+        {
+          "file": "mystring.ads",
+          "line": 33
+        },
+        {
+          "file": "variablestore.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "VariableStore.Database",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 15
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "VariableStore.Init",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 17
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Has_Variable",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 19
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Get",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 21
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Length",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 37
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Put",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 24
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Remove",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 27
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.From_String",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 30
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.To_String",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 32
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Less",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 34
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Equal",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 35
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "VariableStore.Print",
+      "sloc": [
+        {
+          "file": "variablestore.ads",
+          "line": 39
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+    {
+      "file": "mystring.adb",
+      "line": 85,
+      "col": 36,
+      "rule": "ALIASING",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "mystring.ads",
+      "line": 33,
+      "col": 23,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "mystring.adb",
+      "line": 6,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__length",
+    " 2": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__get",
+    " 3": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__less",
+    " 4": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__to_string",
+    " 5": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__from_string",
+    " 6": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__equal",
+    " 7": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__substring",
+    " 8": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__from_string",
+    " 9": "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\variablestore__variables__get_line"
+  },
+  "proof": [
+    {
+      "file": "mystring.ads",
+      "line": 24,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Length",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 23
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 35,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 24,
+      "check_col": 14,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 46,
+      "col": 13,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Get",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 30
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 57,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 46,
+      "check_col": 13,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 43,
+      "col": 23,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 17,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 43,
+      "check_col": 23,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 40,
+      "col": 26,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 40,
+      "check_col": 26,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 40,
+      "col": 38,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 40,
+      "check_col": 38,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 38,
+      "col": 23,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 38,
+      "check_col": 23,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 38,
+      "col": 35,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 38,
+      "check_col": 35,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 37,
+      "col": 36,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 37,
+      "check_col": 36,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 37,
+      "col": 36,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Less",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 16
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 37,
+      "check_col": 36,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 6,
+      "col": 7,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 54,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 6,
+      "check_col": 7,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 8,
+      "col": 25,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 71,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 8,
+      "check_col": 25,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 8,
+      "col": 25,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 151,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 8,
+      "check_col": 25,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 8,
+      "col": 17,
+      "rule": "VC_LENGTH_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 181,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 227,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 184,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 8,
+      "check_col": 17,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        },
+        "Trivial": {
+          "count": 1,
+          "max_steps": 0,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 8,
+      "col": 14,
+      "rule": "VC_LENGTH_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 63,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 8,
+      "check_col": 14,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        },
+        "Trivial": {
+          "count": 1,
+          "max_steps": 0,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 9,
+      "col": 30,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 45,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 9,
+      "check_col": 30,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 9,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.To_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 8
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 64,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 196,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 9,
+      "check_col": 14,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 17,
+      "col": 10,
+      "rule": "VC_RAISE",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 17,
+      "check_col": 10,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 16,
+      "col": 11,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 16,
+      "check_col": 11,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 19,
+      "col": 20,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 19,
+      "check_col": 20,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 22,
+      "col": 16,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 22,
+      "check_col": 16,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 23,
+      "col": 17,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 23,
+      "check_col": 17,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 21,
+      "col": 39,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 21,
+      "check_col": 39,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 21,
+      "col": 49,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 21,
+      "check_col": 49,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 21,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 21,
+      "check_col": 33,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 21,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 21,
+      "check_col": 33,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 14,
+      "col": 45,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 14,
+      "check_col": 45,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 13,
+      "col": 15,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 13,
+      "check_col": 15,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 14,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.From_String",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 12
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 172,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 14,
+      "check_col": 15,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 64,
+      "col": 23,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 64,
+      "check_col": 23,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 61,
+      "col": 23,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 61,
+      "check_col": 23,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 61,
+      "col": 36,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 61,
+      "check_col": 36,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 60,
+      "col": 54,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 60,
+      "check_col": 54,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 60,
+      "col": 67,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 60,
+      "check_col": 67,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 60,
+      "col": 79,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 60,
+      "check_col": 79,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 59,
+      "col": 36,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 59,
+      "check_col": 36,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 59,
+      "col": 36,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 149,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 59,
+      "check_col": 36,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 21,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 21,
+      "check_col": 40,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 21,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 39,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 21,
+      "check_col": 52,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 19,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Equal",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 18
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 955,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 40,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 19,
+      "check_col": 15,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        },
+        "Trivial": {
+          "count": 1,
+          "max_steps": 0,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 72,
+      "col": 44,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 72,
+      "check_col": 44,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 72,
+      "col": 44,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 57,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 72,
+      "check_col": 44,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 77,
+      "col": 28,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 77,
+      "check_col": 28,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 77,
+      "col": 16,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 77,
+      "check_col": 16,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 78,
+      "col": 17,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 78,
+      "check_col": 17,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 76,
+      "col": 39,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 76,
+      "check_col": 39,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 76,
+      "col": 46,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 76,
+      "check_col": 46,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 76,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 76,
+      "check_col": 33,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 76,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 76,
+      "check_col": 33,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 28,
+      "col": 51,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 28,
+      "check_col": 51,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.ads",
+      "line": 28,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Substring",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 26
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 80,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.ads",
+      "check_line": 28,
+      "check_col": 14,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "variablestore.ads",
+      "line": 31,
+      "col": 14,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.From_String",
+        "sloc": [
+          {
+            "file": "variablestore.ads",
+            "line": 30
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "variablestore.ads",
+      "check_line": 31,
+      "check_col": 14,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 85,
+      "col": 44,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 85,
+      "check_col": 44,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "mystring.adb",
+      "line": 85,
+      "col": 60,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "VariableStore.Variables.Get_Line",
+        "sloc": [
+          {
+            "file": "mystring.ads",
+            "line": 33
+          },
+          {
+            "file": "variablestore.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 67,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "mystring.adb",
+      "check_line": 85,
+      "check_col": 60,
+      "session_dir": 9,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Database",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.Length",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 23
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Length",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 23
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Length",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 23
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.Substring",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 26
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.From_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 12
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.From_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 12
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Substring",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 26
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Substring",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 26
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.From_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 12
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.MyString",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 6
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Get",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 30
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Get",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 30
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.To_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 8
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.To_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 8
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Less",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 16
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Get_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 481
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "VariableStore.Variables.Get_Line",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 33
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Get_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 481
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Get_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 481
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Get_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 481
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Get_Line",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 33
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.To_String",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 8
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Variables.Less",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 16
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 2.03125000000000E-01,
+    "codepeer results": 1.66800004080869E-04,
+    "init_why_sections": 5.46500028576702E-04,
+    "gnatwhy3.transformations.detect_polymorphism": 0.00000000000000E+00,
+    "globals/properties (advanced)": 3.10612991452217E-02,
+    "gnatwhy3.transformations.eliminate_literal": 1.56250000000000E-02,
+    "gnatwhy3.run_vcs": 2.57812500000000E+00,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 1.56250000000000E-02,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 4.68750000000000E-02,
+    "flow analysis": 9.51649993658066E-03,
+    "gnatwhy3.transformations.simplify_formula": 6.25000000000000E-02,
+    "marking": 9.50799975544214E-03,
+    "translation of standard": 3.74009995721281E-03,
+    "gnatwhy3.register_vcs": 2.18750000000000E-01,
+    "gnatwhy3.transformations.eliminate_epsilon": 1.56250000000000E-02,
+    "globals (basic)": 1.66902001947165E-02,
+    "gnatwhy3.schedule_vcs": 0.00000000000000E+00,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 3.12500000000000E-02,
+    "gnatwhy3.transformations.eliminate_inductive": 0.00000000000000E+00,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 2.03125000000000E-01,
+    "gnatwhy3.transformations.eliminate_builtin": 0.00000000000000E+00,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 2.31250000000000E+00
+  }
+}

@@ -1,0 +1,2 @@
+main.adb:147:49: medium: overflow check might fail (e.g. when integerA = 2 and integerB = Integer'Last-2)[#1]
+main.adb:150:52: medium: overflow check might fail (e.g. when integerA = 0 and integerB = -1)[#0]

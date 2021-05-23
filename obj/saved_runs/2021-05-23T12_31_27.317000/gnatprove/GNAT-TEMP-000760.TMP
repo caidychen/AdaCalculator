@@ -1,0 +1,9 @@
+{"session_dir" : "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__get_line" , "results" : [{"id" : 96 , "reason" : "VC_RANGE_CHECK" , "result" : true , "extra_info" : 0 , "check_tree" : [{"proof_attempts" : {"CVC4" : {"result" : "Valid" ,
+"steps" : 5 , "time" : 0 } } ,
+"transformations" : {} }] , "stats" : {"CVC4" : { "count" : 1 , "max_steps" : 1 , "max_time" : 0.000000  } } },
+{"id" : 97 , "reason" : "VC_RANGE_CHECK" , "result" : true , "extra_info" : 0 , "check_tree" : [{"proof_attempts" : {"CVC4" : {"result" : "Valid" ,
+"steps" : 67 , "time" : 0 } } ,
+"transformations" : {} }] , "stats" : {"CVC4" : { "count" : 1 , "max_steps" : 1 , "max_time" : 0.000000  } } }] , "timings" : {"gnatwhy3.run_vcs" : 0.000000 ,
+"gnatwhy3.register_vcs" : 0.000000 , "gnatwhy3.schedule_vcs" : 0.000000 ,
+"gnatwhy3.init" : 0.281250 ,
+"gnatwhy3.save_session" : 0.000000 } }
