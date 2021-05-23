@@ -15,7 +15,7 @@ package MyStringTokeniser with SPARK_Mode is
 
    procedure Tokenise(S : in String; Tokens : in out TokenArray; Count : out Natural) with
      Pre => (if S'Length > 0 then S'First <= S'Last) and Tokens'First <= Tokens'Last,
-     Post => Count <= Tokens'Length and   -- 'Count' represents NumTokens as index. This helps eliminates
+     Post => Count <= Tokens'Length and   -- 'Count' represents NumTokens as index. This helps eliminate
                                           -- 'array index out of bounds' when proving with SPARK.
 
      (for all Index in Tokens'First..Tokens'First+(Count-1) =>   -- For all tokenised tokens from a string:
@@ -29,6 +29,6 @@ package MyStringTokeniser with SPARK_Mode is
                                                                  -- specified in .adb file. Here specified as post-condition
                                                                  -- to satisfy logic. ******** TODO: Does this sounds right? *********
 
-
+   -- store vara
 
 end MyStringTokeniser;
