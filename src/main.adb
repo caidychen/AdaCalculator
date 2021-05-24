@@ -17,8 +17,11 @@
 -- check if LockedState = False holds.
 
 -- Security Property: Denial of Service
--- Under the core_math_operations pacakge, for each arithmatic operation we added in Precondition to
--- check for potential integer overflow that would have otherwise casued the program to crash. For add
+-- Under the core_math_operations pacakge, for each arithmatic operation we added in Preconditions to
+-- check for potential integer overflow issues that would have otherwise casued the program to crash. The way 
+-- our defense works is by casting both integers as Long_Long_Integer (64-bit long) and allowing them to
+-- do operations that can potentially grow from 32 bit to 64 bit. This way we could safely guard any final 
+-- results exceeding the boundary of 32 bit Integer without raising SPARKprover warnings.
 
 
 pragma SPARK_Mode (On);
