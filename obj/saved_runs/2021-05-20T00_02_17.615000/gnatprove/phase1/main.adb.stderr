@@ -1,2 +1,0 @@
-main.adb:146:142: expected type "Standard.Float"
-main.adb:146:142: found type "Standard.Integer"

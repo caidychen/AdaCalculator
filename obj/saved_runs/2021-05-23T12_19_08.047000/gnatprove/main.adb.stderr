@@ -1,1 +1,0 @@
-main.adb:151:49: medium: overflow check might fail (e.g. when integerA = Integer'First+2 and integerB = 2)[#0]

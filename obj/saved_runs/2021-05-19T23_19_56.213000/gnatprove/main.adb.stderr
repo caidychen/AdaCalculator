@@ -1,4 +1,0 @@
-main.adb:145:49: medium: overflow check might fail (e.g. when integerA = -2 and integerB = Integer'Last)[#3]
-main.adb:147:49: medium: overflow check might fail (e.g. when integerA = -2 and integerB = 2)[#2]
-main.adb:150:52: medium: divide by zero might fail (e.g. when integerB = 0)[#0]
-main.adb:150:52: medium: overflow check might fail (e.g. when integerA = -1 and integerB = -1)[#1]

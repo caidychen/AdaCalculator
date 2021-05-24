@@ -1,5 +1,0 @@
-main.adb:129:36: warning: unused assignment to "poppedInteger"[#0]
-main.adb:146:102: medium: overflow check might fail (e.g. when integerA = -1)[#4]
-main.adb:149:49: medium: overflow check might fail (e.g. when integerA = Integer'Last and integerB = -2)[#3]
-main.adb:151:49: medium: overflow check might fail (e.g. when integerA = 2 and integerB = -2)[#2]
-main.adb:154:52: medium: overflow check might fail (e.g. when integerA = Integer'Last and integerB = 0)[#1]

@@ -1,2 +1,0 @@
-main.adb:26:34: actual for formal object with mode in cannot depend on variable input "StackSize" (SPARK RM 4.4(2))[#1]
-main.adb:33:06: high: constant with variable input "Max_Size" must be listed in the Global aspect of "Main" (SPARK RM 6.1.4(14))[#0]

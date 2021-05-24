@@ -1,4 +1,0 @@
-{"session_dir" : "D:\\CodeRepo\\GnatAdaCalculator\\obj\\gnatprove\\main__lines__from_string" , "results" : [] , "timings" : {"gnatwhy3.run_vcs" : 0.000000 ,
-"gnatwhy3.register_vcs" : 0.000000 , "gnatwhy3.schedule_vcs" : 0.000000 ,
-"gnatwhy3.init" : 0.296875 ,
-"gnatwhy3.save_session" : 0.015625 } }

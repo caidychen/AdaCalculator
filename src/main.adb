@@ -10,7 +10,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Containers;
 with Ada.Long_Long_Integer_Text_IO;
-
+with core_math_operations;
 with SimpleStack;
 
 
@@ -112,12 +112,7 @@ begin
                   declare
                      inputInteger : Integer := StringToInteger.From_String(Lines.To_String(Input));
                   begin
-                     if inputInteger >= 0 then
-                        SS.Push(Stack, inputInteger);
-                     else
-                        Put("Negative number is not allowed.");
-                        return;
-                     end if;
+                     SS.Push(Stack, inputInteger);
                   end;
                else 
                   Put("Stack is full.");New_Line;
@@ -141,16 +136,23 @@ begin
                   begin
                      SS.PopWithResult(Stack, integerA);
                      SS.PopWithResult(Stack, integerB);
-                     if Lines.To_String(Command) = "+" and (integerB >= 0 and then integerA < Integer'Last - integerB) then
-                        SS.Push(Stack, integerA + integerB);
-                     elsif Lines.To_String(Command) = "-" and (integerB >= 0 and then integerA > Integer'First + integerB) then
-                        SS.Push(Stack, integerA - integerB);
-                     elsif (Lines.To_String(Command) = "*" and (integerA >= 0 and integerB >= 0)) and then
-                       (Long_Long_Integer(integerA) * Long_Long_Integer(integerB)) <= Long_Long_Integer(Integer'Last) then
-                        SS.Push(Stack, integerA * integerB);
+                     if Lines.To_String(Command) = "+" and 
+                       ((integerB >= 0 and then (integerA > Integer'First + integerB and integerA < Integer'Last - integerB)) or
+                          (integerB < 0 and then (integerA > Integer'First - integerB and integerA < Integer'Last + integerB))) then
+                        SS.Push(Stack, core_math_operations.add(integerA, integerB));
+                     elsif Lines.To_String(Command) = "-" and 
+                       ((integerB >= 0 and then (integerA < Integer'Last - integerB and integerA > Integer'First + integerB)) or
+                          (integerB < 0 and then (integerA < Integer'Last + integerB and integerA > Integer'First - integerB)))then
+                        SS.Push(Stack, core_math_operations.minus(integerA, integerB));
+                     elsif (Lines.To_String(Command) = "*" and
+                              (((integerA >= 0 and integerB >= 0) or (integerA <= 0 and integerB <= 0)) and then 
+                                 (Long_Long_Integer(integerA) * Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last))) and
+                                (((integerA >= 0 and integerB <= 0) or (integerA <= 0 and integerB >= 0)) and then 
+                                   (Long_Long_Integer(integerA) * Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First)))) then
+                                 SS.Push(Stack, core_math_operations.multiply(integerA, integerB));
                      elsif Lines.To_String(Command) = "/" then
-                        if integerB /= 0 and integerA > 0 and integerB > 0 then
-                           SS.Push(Stack, integerA / integerB);
+                        if ((integerB < 0 and then integerA > Integer'First) or integerB > 0 ) then
+                           SS.Push(Stack, core_math_operations.divide(integerA, integerB));
                         else
                            Put("Division by zero is disallowed.");New_Line;
                            return;
