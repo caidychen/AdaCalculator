@@ -1,4 +1,5 @@
 --Task 4
+-- Security Property: Elevation of Privilege
 --1) Proof of Unlock operation can only be performed when the calculator is in the locked state:
 -- A pragama assertion is added in line (?) before the Unlock operation happens. It confirm that
 -- LockedState is True before changing it to False.
@@ -14,6 +15,10 @@
 -- by a if statement in line (?) which regulates above operations to be executed only when LockedState
 -- is False. To let SPARK prove this, we have added pragma assertion before each of above operations to
 -- check if LockedState = False holds.
+
+-- Security Property: Denial of Service
+-- Under the core_math_operations pacakge, for each arithmatic operation we added in Precondition to
+-- check for potential integer overflow that would have otherwise casued the program to crash. For add
 
 
 pragma SPARK_Mode (On);
@@ -168,23 +173,24 @@ begin
                      SS.PopWithResult(Stack, integerA);
                      SS.PopWithResult(Stack, integerB);
                      if Lines.To_String(Command) = "+" and 
-                       ((integerB >= 0 and then (integerA > Integer'First + integerB and integerA < Integer'Last - integerB)) or
-                          (integerB < 0 and then (integerA > Integer'First - integerB and integerA < Integer'Last + integerB))) then
+                       ((Long_Long_Integer(integerA) + Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last)) and
+                          (Long_Long_Integer(integerA) + Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First))) then
                         pragma Assert(LockedState = False); -- Added to secure operations
                         SS.Push(Stack, core_math_operations.add(integerA, integerB));
                      elsif Lines.To_String(Command) = "-" and 
-                       ((integerB >= 0 and then (integerA < Integer'Last - integerB and integerA > Integer'First + integerB)) or
-                          (integerB < 0 and then (integerA < Integer'Last + integerB and integerA > Integer'First - integerB)))then
+                       ((Long_Long_Integer(integerA) - Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last)) and
+                          (Long_Long_Integer(integerA) - Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First)))then
                         pragma Assert(LockedState = False); -- Added to secure operations
                         SS.Push(Stack, core_math_operations.minus(integerA, integerB));
-                     elsif (Lines.To_String(Command) = "*" and
-                              (((integerA >= 0 and integerB >= 0) or (integerA <= 0 and integerB <= 0)) and then 
-                                 (Long_Long_Integer(integerA) * Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last))) and
-                                (((integerA >= 0 and integerB <= 0) or (integerA <= 0 and integerB >= 0)) and then 
-                                   (Long_Long_Integer(integerA) * Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First)))) then
+                     elsif Lines.To_String(Command) = "*" and
+                       ((Long_Long_Integer(integerA) * Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last)) and
+                          (Long_Long_Integer(integerA) * Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First))) then
                         pragma Assert(LockedState = False); -- Added to secure operations
                         SS.Push(Stack, core_math_operations.multiply(integerA, integerB));
-                     elsif Lines.To_String(Command) = "/" and ((integerB < 0 and then integerA > Integer'First) or integerB > 0 ) then
+                     elsif Lines.To_String(Command) = "/" and 
+                       (integerB /= 0 and then 
+                          ((Long_Long_Integer(integerA) / Long_Long_Integer(integerB) <= Long_Long_Integer(Integer'Last)) and
+                            (Long_Long_Integer(integerA) / Long_Long_Integer(integerB) >= Long_Long_Integer(Integer'First)))) then
                         pragma Assert(LockedState = False); -- Added to secure operations
                         SS.Push(Stack, core_math_operations.divide(integerA, integerB));
                      end if;
