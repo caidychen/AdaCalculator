@@ -1,22 +1,31 @@
---Task 4
--- Security Property: Elevation of Privilege
---1) Proof of Unlock operation can only be performed when the calculator is in the locked state:
+
+-- SWEN90010 High Integrity System Engineering
+-- Assignment 3
+-- Students Detail:
+-- RUIFENG LIU 1200663
+-- KAIDI CHEN 1064973
+
+-- Task 4
+-- 1) Security Properties:Tempering
+-- Proof of Unlock operation can only be performed when the calculator is in the locked state:
 -- A pragama assertion is added in line (?) before the Unlock operation happens. It confirm that
 -- LockedState is True before changing it to False.
 
---2) Proof of Lock operation successfully updates the PIN with a new PIN supplied:
+-- 2) Security Properties: Elevation of Privilege
+-- Proof of Lock operation successfully updates the PIN with a new PIN supplied:
 -- A pragma assertion is added in line (?) after the value of PIN.From_String(S) is passed to
 -- PINOriginal. This assertion checks if the master PIN is successfully changed to the new one.
 -- And this assertion is measured for each iteration of the while loop.
 
---3) Proof of "+", "-", "*", "/", load, store, remove, and lock operations can only ever be 
---   performed when the calculator is unlocked:
+-- 3) Security Properties: Elevation of Privilege
+-- Proof of "+", "-", "*", "/", load, store, remove, and lock operations can only ever be 
+-- performed when the calculator is unlocked:
 -- Our implementation of the calculator is designed to distinguish between Locked and Unlocked states
 -- by a if statement in line (?) which regulates above operations to be executed only when LockedState
 -- is False. To let SPARK prove this, we have added pragma assertion before each of above operations to
 -- check if LockedState = False holds.
 
--- Security Property: Denial of Service
+-- 4) Security Property: Denial of Service
 -- Under the core_math_operations pacakge, for each arithmatic operation we added in Preconditions to
 -- check for potential integer overflow issues that would have otherwise casued the program to crash. The way 
 -- our defense works is by casting both integers as Long_Long_Integer (64-bit long) and allowing them to
