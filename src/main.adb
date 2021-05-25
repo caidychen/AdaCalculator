@@ -1,4 +1,3 @@
-
 -- SWEN90010 High Integrity System Engineering
 -- Assignment 3
 -- Students Detail:
@@ -8,12 +7,12 @@
 -- Task 4
 -- 1) Security Properties:Tempering
 -- Proof of Unlock operation can only be performed when the calculator is in the locked state:
--- A pragama assertion is added in line (?) before the Unlock operation happens. It confirm that
+-- A pragama assertion is added in line (122) before the Unlock operation happens. It confirm that
 -- LockedState is True before changing it to False.
 
 -- 2) Security Properties: Elevation of Privilege
 -- Proof of Lock operation successfully updates the PIN with a new PIN supplied:
--- A pragma assertion is added in line (?) after the value of PIN.From_String(S) is passed to
+-- A pragma assertion is added in line (148) after the value of PIN.From_String(S) is passed to
 -- PINOriginal. This assertion checks if the master PIN is successfully changed to the new one.
 -- And this assertion is measured for each iteration of the while loop.
 
@@ -21,9 +20,9 @@
 -- Proof of "+", "-", "*", "/", load, store, remove, and lock operations can only ever be 
 -- performed when the calculator is unlocked:
 -- Our implementation of the calculator is designed to distinguish between Locked and Unlocked states
--- by a if statement in line (?) which regulates above operations to be executed only when LockedState
+-- by a if statement in line (111) which regulates above operations to be executed only when LockedState
 -- is False. To let SPARK prove this, we have added pragma assertion before each of above operations to
--- check if LockedState = False holds.
+-- check that LockedState = False holds.
 
 -- 4) Security Property: Denial of Service
 -- Under the core_math_operations pacakge, for each arithmatic operation we added in Preconditions to
@@ -78,6 +77,7 @@ begin
    end if;
    
    while True loop
+      
       if LockedState = True then
          Put("locked > ");
       else

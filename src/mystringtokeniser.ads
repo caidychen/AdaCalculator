@@ -27,7 +27,7 @@ package MyStringTokeniser with SPARK_Mode is
                                                                  -- zero otherwise there is no token at all.
         Tokens(Index).Length-1 <= S'Last - Tokens(Index).Start); -- This is identical to that the first Loop_Invariant
                                                                  -- specified in .adb file. Here specified as post-condition
-                                                                 -- to satisfy logic. ******** TODO: Does this sounds right? *********
+                                                                 -- to satisfy logic.
 
    -- store vara
 

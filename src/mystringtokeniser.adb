@@ -29,7 +29,7 @@ package body MyStringTokeniser with SPARK_Mode is
 
          pragma Loop_Invariant (OutIndex = Tokens'First + Count); -- At the beginning of the loop, OutIndex = Tokens'First and Count = 0
                                                                   -- After each loop, OutIndex is incremented by 1, so is Count. Therefore Invariant always holds.
-                                                                  -- At the end of the loop, the invariant still holds  ********** TODO: How to prove it? ***********
+                                                                  -- At the end of the loop, the invariant still holds.
 
          -- look for start of next token and skip all the whitespaces
          while (Index >= S'First and Index < S'Last) and then Is_Whitespace(S(Index)) loop
